@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    
+    <main>
+        <header>
+            <div>
+                <h1><span>ROCK</span>
+                    <span>PAPER</span>
+                    <span>SCISSORS</span>
+                </h1>
+            </div>
+            <div>
+                <p><strong> Computer : </strong><span id="comp-score">0</span></p>
+                <p><strong> User : </strong><span id="user-score">0</span></p>
+            </div>
+        </header>
+        <section class="hands hidden" id="hands">
+            <button><i class="far fa-hand-rock" onclick="check('rock')"></i></button> 
+            <button><i class="far fa-hand-paper" onclick="check('paper')"></i></button>
+            <button><i class="far fa-hand-scissors" onclick="check('scissors')"></i></button>
+        </section>
+        <section class="result" id='res'>
+            <div id="game-start" class="game-start">
+                <button class="startbtn" id="startbtn">START</button>
+            </div>
+            <div id= "game-started" class="game-started hidden">
+                <p>COMPUTER CHOICE : <span id="comp-choice"></span></p>
+                <p>YOUR CHOICE : <span id="user-choice"></span></p>
+                <div class='final'><p id='result'></p></div>
+            </div>
+        </section>
+        <div class="winner hidden" id='winners'>
+            <p id='winorlose'>------</p>
+            <button id='restart' onclick="location.reload(1)">RESTART</button>
+        </div>
+    </main>
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>
