@@ -5,3 +5,5 @@ technologies used :
 ## html for structure of the application
 ## css for design of the application
 ## js is used for the logic of the application
+
+![](./alert.png)
