@@ -6,4 +6,7 @@ technologies used :
 ## css for design of the application
 ## js is used for the logic of the application
 
-![](./alert.png)
+![](./screenshots/start.PNG)
+![](./screenshots/startpage.PNG)
+![](./screenshots/alert.PNG)
+![](./screenshots/restart.PNG)
